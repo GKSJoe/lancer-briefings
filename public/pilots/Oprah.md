@@ -1,0 +1,1 @@
+Is literally Agent Carter as played by Chris Tucker in the blockbuster hit movies; "Rush Hour" "Rush Hour 2" and "Rush Hour 3".

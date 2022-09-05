@@ -5,7 +5,7 @@
 /*-------------------------------------*/
 
 //Primary Colors
-$primary: rgba(125, 187, 187, 1);
+$primary: rgb(29, 143, 143);
 $secondary: rgba(23, 29, 30, 0.8);
 $highlight-hover: rgba(255, 255, 255, 0.3);
 $highlight-active: rgba(255, 255, 255, 0.1);
@@ -111,7 +111,7 @@ header {
   animation-fill-mode: forwards;
   background-color: $primary;
   border-color: $primary;
-  width: 700px;
+  width: 800px;
   height: 100%;
   display: inline-flex;
   align-items: center;
@@ -204,7 +204,7 @@ header {
 }
 
 header video {
-  margin-left: 3.5%;
+  margin-left: 1050px;
   width: 86px;
   height: 86px;
 }
@@ -213,7 +213,7 @@ div .location-info {
   height: 90px;
   width: 550px;
   padding: 10px;
-  margin-left: 20px;
+  margin-left: 0px;
   display: flex;
   flex-direction: column;
   color: $text-location;
@@ -309,13 +309,13 @@ section .section-header {
   padding-left: 16px;
 
   img {
-    width: 36px;
-    height: 36px;
+    width: 41px;
+    height: 41px;
     align-self: center;
   }
 
   h1 {
-    font-size: 26px;
+    font-size: 35px;
     margin: 0%;
     align-self: center;
     font-family: "Big Shoulders Display", cursive;
@@ -326,7 +326,7 @@ section .section-header {
 }
 
 .section-content-container {
-  height: 666px;
+  height: 800px;
   background: $secondary;
   border: 1px solid $primary;
   margin-top: -1px;
@@ -334,8 +334,8 @@ section .section-header {
 
   h3 {
     color: $primary;
-    font-size: 18px;
-    padding: 1em;
+    font-size: 25px;
+    padding: 1em 0.6em 0;
     padding-bottom: 0px;
     margin: 0%;
     margin-bottom: 0.5em;
@@ -363,7 +363,7 @@ section .section-header {
 }
 
 .mission-list-container {
-  height: 180px;
+  height: 201px;
   overflow-y: scroll;
 }
 
@@ -413,7 +413,7 @@ section .section-header {
     margin-bottom: 0.25em;
     line-height: 1.5em;
     font-family: "Raleway", sans-serif;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -421,7 +421,7 @@ section .section-header {
   }
 
   h2 {
-    font-size: 18px;
+    font-size: 25px;
     margin: 0%;
     align-self: center;
     font-family: "Big Shoulders Display", cursive;
@@ -483,7 +483,7 @@ section .section-header {
 }
 
 .pilot-list-container {
-  height: 666px;
+  height: 802px;
   overflow-y: scroll;
 }
 
@@ -492,13 +492,13 @@ section .section-header {
   flex-direction: row;
   padding: 1em;
   column-gap: 1em;
-  height: 136px;
+  height: 167px;
   border-bottom: none;
   z-index: 1;
   cursor: pointer;
 
   .pilot-loadout {
-    width: 250px;
+    width: 314px;
     display: flex;
     flex-direction: column;
     row-gap: 0px;
@@ -513,14 +513,14 @@ section .section-header {
   }
 
   .pilot-portrait {
-    width: 104px;
-    height: 136px;
+    width: 168px;
+    height: 168px;
     object-fit: cover;
   }
 
   .mech-portrait {
-    width: 104px;
-    height: 136px;
+    width: 168px;
+    height: 168px;
     object-fit: cover;
   }
 
@@ -529,7 +529,7 @@ section .section-header {
     margin-bottom: 0.25em;
     line-height: 1.5em;
     font-family: "Raleway", sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -537,7 +537,7 @@ section .section-header {
   }
 
   h2 {
-    font-size: 18px;
+    font-size: 22px;
     margin: 0%;
     margin-bottom: 0.25em;
     align-self: center;
@@ -566,14 +566,14 @@ section .section-header {
   transition: 0.2s ease;
   position: absolute;
   text-align: center;
-  height: 136px;
+  height: 199px;
   background-color: $highlight-hover;
   display: flex;
   align-items: center;
   margin-bottom: 1em;
   width: 0px;
-  margin-top: -153px;
-  margin-left: 1em;
+  margin-top: -199px;
+  margin-left: 0em;
   z-index: -1;
 
   .text {
@@ -592,7 +592,7 @@ section .section-header {
 }
 
 .pilot-wrapper:hover .middle {
-  width: 757px;
+  width: 100%;
 }
 
 .pilot-wrapper:active .middle,
@@ -726,7 +726,7 @@ footer {
   right: 50px;
   opacity: 0.1;
   color: $text-location;
-  transition: 2s ease-in-out;
+  transition: 1s ease-in-out;
   p {
     font-family: "Inconsolata", monospace;
     font-weight: 400;
@@ -756,7 +756,7 @@ footer:hover {
 div.markdown {
   padding-left: 1em;
   padding-right: 1em;
-  font-size: 16px;
+  font-size: 25px;
   margin: 0%;
   font-family: "Titillium Web", cursive;
   font-weight: 400;
@@ -775,7 +775,7 @@ div.markdown {
     margin-bottom: 0.25em;
     line-height: 1.5em;
     font-family: "Raleway", sans-serif;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -783,7 +783,7 @@ div.markdown {
   }
 
   h2 {
-    font-size: 18px;
+    font-size: 30px;
     margin: 0%;
     margin-bottom: 1em;
     align-self: center;
@@ -821,11 +821,11 @@ div.markdown {
 }
 
 #missions .markdown {
-  height: 350px;
+  height: 448px;
 }
 
 #events .markdown {
-  height: 95%;
+  height: 92%;
   padding-top: 1em;
   padding-bottom: 1em;
   border-bottom: none;

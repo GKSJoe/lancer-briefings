@@ -1,7 +1,7 @@
 <template>
   <Header :header="this.header" />
   <div class="content-container">
-    <section class="section-container" id="missions" style="width:435px; height:714px;">
+    <section class="section-container" id="missions" style="width:935px; height:1440px;">
       <div class="section-header clipped-medium-backward">
         <img src="/icons/mission-icon.svg" />
         <h1>Mission Log</h1>
@@ -21,16 +21,16 @@
         </div>
       </div>
     </section>
-    <section class="section-container" id="events" style="width:435px; height:714px;">
+    <section class="section-container" id="events" style="width:935px; height:1440px;">
       <div class="section-header clipped-medium-backward">
         <img src="/icons/events-icon.svg" />
-        <h1>Events Log</h1>
+        <h1>Mission Briefing</h1>
       </div>
       <div class="section-content-container">
         <Markdown :source="events" class="markdown" />
       </div>
     </section>
-    <section class="section-container" id="pilots" style="width:894px; height:714px;">
+    <section class="section-container" id="pilots" style="width:1594px; height:1440px;">
       <div style="height:52px; overflow:hidden;">
         <div class="section-header clipped-medium-backward-pilot">
           <img src="/icons/pilot-icon.svg" />
@@ -89,56 +89,58 @@ export default {
 
   data() {
     return {
-      "mission_slug": "001",
+      "mission_slug": "003",
       "current_md": "",
       "events": "",
       "missions": [
         {
           "slug": "001",
-          "name": "Bug-Hunt",
+          "name": "Bug-Hunt: Bowl Season",
+          "status": "start"
+        },
+        {
+          "slug": "002",
+          "name": "Bug-Hunt: Widowmaker",
+          "status": "start"
+        },
+        {
+          "slug": "003",
+          "name": "fake",
           "status": "start"
         },
       ],
       "pilots": [
         {
-          "callsign": "Jinzo",
-          "alias": "Shayan Arsenal",
-          "code": "462370be-bd0f-41c2-b667-cc75f3a59a96///NDL-C-DEEP-STATION//377308ad-ba23-410b-ae37-68a1fb5f8db4",
+          "callsign": "Salamander",
+          "alias": "Lieutenant Pheno Syx",
+          "code": "462370be-bd0f-41c2-b667-cc75f3a59a96///UNION-AUX-DEEP-STATION-4.1532//377308ad-ba23-410b-ae37-68a1fb5f8db4",
           "corpro": "GMS",
-          "frame": "Everest",
-          "mech": "Type - Worst Beat"
+          "frame": "Sagarmatha",
+          "mech": "The 10 Meter Knight"
         },
         {
-          "callsign": "Kal",
-          "alias": "Vier Flau",
-          "code": "7cd700cc-c990-48ed-892f-e5468de724c4///NDL-C-DEEP-STATION//a98c3e28-ad4a-4f89-bcd9-501464e960da",
+          "callsign": "Soulless",
+          "alias": "Sergeant Nicholas Laandsman",
+          "code": "7cd700cc-c990-48ed-892f-e5468de724c4///UNION-AUX-DEEP-STATION-4.1532//a98c3e28-ad4a-4f89-ne51-83f2ac583d13",
           "corpro": "GMS",
-          "frame": "Everest",
-          "mech": "Necrophile"
+          "frame": "Sagarmatha",
+          "mech": "Path to the Forgotten"
         },
         {
-          "callsign": "Starboard",
-          "alias": "Maria",
-          "code": "4be26ce9-923b-4069-b6c9-76437d4be455///NDL-C-DEEP-STATION//056940c6-8d55-4190-8e85-57caa043cb1a",
+          "callsign": "Duck",
+          "alias": "Private Hella Kissler",
+          "code": "4be26ce9-923b-4069-b6c9-76437d4be455///UNION-AUX-DEEP-STATION-4.1532//056940c6-8d55-4190-8e85-57caa043cb1a",
           "corpro": "GMS",
           "frame": "Everest",
-          "mech": "Scarlet Judicator"
+          "mech": "Coda"
         },
         {
-          "callsign": "Badlands",
-          "alias": "Marlene Gatsby",
-          "code": "98ca9616-044e-4f87-b89b-aae4eb3387ec///NDL-C-DEEP-STATION//6f572259-6946-41bf-931a-e0543709e892",
+          "callsign": "Oprah",
+          "alias": "Private Chris Tucker",
+          "code": "98ca9616-044e-4f87-b89b-aae4eb3387ec///UNION-AUX-DEEP-STATION-4.1532//6f572259-6946-41bf-931a-e0543709e892",
           "corpro": "GMS",
           "frame": "Everest",
-          "mech": "Mayfly"
-        },
-        {
-          "callsign": "Compadre",
-          "alias": 'Clint "CC" Cruz',
-          "code": "d1fdf62e-d81e-4e10-97c8-df3bc4860117///NDL-C-DEEP-STATION//5a4254aa-9fa2-42ca-a077-8f5bfd1e1ad3",
-          "corpro": "GMS",
-          "frame": "Everest",
-          "mech": "Rio Bravo"
+          "mech": "Rush Hour"
         },
       ],
       "header": {
@@ -147,10 +149,10 @@ export default {
         "system": "Ardennes-3",
         "gate": "Atlas-Quanokrim",
         "ring": "Atlas-Line",
-        "headerTitle": "Mirrorsmoke",
-        "headerSubtitle": "Mercenary Company",
-        "subheaderTitle": "Crisis Response",
-        "subheaderSubtitle": "Delta-Echo-Echo-Zulu",
+        "headerTitle": "Tesseract",
+        "headerSubtitle": "Knights",
+        "subheaderTitle": "Union Auxiliaries",
+        "subheaderSubtitle": "First Response Team-Alpha",
       },
       "options":{
         "eventsMarkdownPerMission": true
@@ -211,8 +213,8 @@ export default {
 
 <style lang="scss">
 #app {
-  width: 1902px;
-  height: 910px;
+  width: 2400px;
+  height: 1440px;
   overflow: hidden;
 }
 </style>
