@@ -89,7 +89,7 @@ export default {
 
   data() {
     return {
-      "mission_slug": "003",
+      "mission_slug": "002",
       "current_md": "",
       "events": "",
       "missions": [
@@ -101,11 +101,6 @@ export default {
         {
           "slug": "002",
           "name": "Bug-Hunt: Widowmaker",
-          "status": "start"
-        },
-        {
-          "slug": "003",
-          "name": "fake",
           "status": "start"
         },
       ],
